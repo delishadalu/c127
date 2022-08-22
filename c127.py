@@ -29,7 +29,10 @@ def scrape():
                 if index == 0:
                     temp_list.append(li_tag.find_all("a")[0].contents[0])
                 else: 
-                    temp_list.append(li_tag.contents[0])
+                    try:
+                        temp_list.append(li_tag.contents[0])
+                    except:
+                        temp_list.append("")
                     
 
             planets_data.append(temp_list)
