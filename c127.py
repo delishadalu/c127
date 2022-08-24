@@ -38,4 +38,4 @@ def scrape():
             planets_data.append(temp_list)
 
         # Find all elements on the page and click to move to the next page
-        browser.find_element(by=By.XPATH, value='//*[@id="primary_column"]/footer/div/div/div/nav/span[2]/a').click()
+        
